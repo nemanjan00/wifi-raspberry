@@ -4,6 +4,8 @@ matrix:
       go: "1.10.3"
       script:
         - make -B build/wifi-raspberry
+        - nvm install 10.9.0
+        - yarn --version
 
     - language: node_js
       node_js: "10.9.0"
