@@ -9,7 +9,9 @@
   "devDependencies": {
     "bootstrap-vue": "^2.0.0-rc.11",
     "vue": "^2.5.17",
+    "vue-loader": "^15.4.1",
     "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.17",
     "webpack": "^4.17.1"
   },
   "dependencies": {}
