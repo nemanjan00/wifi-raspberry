@@ -9,4 +9,5 @@
 # Build bundle
 
 /frontend/static/main.js
+/frontend/static/fonts/
 
