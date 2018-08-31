@@ -1,0 +1,9 @@
+{
+  "name": "wifi-raspberry",
+  "version": "0.0.0",
+  "description": "WiFi Raspberry is WiFi Pineapple-like toolkit for RPi",
+  "repository": "https://github.com/nemanjan00/wifi-raspberry",
+  "author": "nemanjan00 <nemanjan00@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
