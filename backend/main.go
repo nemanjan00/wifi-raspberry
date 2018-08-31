@@ -15,6 +15,9 @@ func main() {
 	http.Handle("/", fs)
 
 	http.HandleFunc("/api", handler);
+
+	fmt.Printf("Starting wifi-raspberry on port 8080.\n");
+
 	log.Fatal(http.ListenAndServe(":8080", nil));
 }
 
