@@ -1,5 +1,7 @@
 'use strict'
 
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 const { VueLoaderPlugin } = require('vue-loader')
 
 const path = require("path");
@@ -47,7 +49,11 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new VueLoaderPlugin()
+		new VueLoaderPlugin(),
+		new HtmlWebpackPlugin({
+			filename: "./index.html",
+			template: "./frontend/index.html"
+		})
 	]
 }
 
