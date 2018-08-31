@@ -8,6 +8,8 @@
   "private": true,
   "devDependencies": {
     "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
     "webpack": "^4.17.1"
-  }
+  },
+  "dependencies": {}
 }
