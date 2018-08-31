@@ -1,0 +1,16 @@
+matrix:
+  include:
+    - language: go
+      go: "1.10.3"
+      before_script:
+        - echo "before_script"
+      script:
+        - echo "script"
+
+    - language: node_js
+      node_js: "10.9.0"
+      before_script:
+        - echo "before_script"
+      script:
+        - echo "script"
+
