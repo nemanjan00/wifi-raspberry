@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<b-navbar toggleable="md" type="dark" variant="info">
+		<b-navbar toggleable="md" type="dark" variant="primary">
 
 			<b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
@@ -42,7 +42,7 @@
 		</b-navbar>
 
 		<div class="row">
-			<div class="col-2" style="border-right: 1px solid rgba(0,0,0,.1);height: calc(100vh - 4rem);">
+			<div class="col-2" style="border-right: 1px solid rgba(255,255,255,.1);height: calc(100vh - 4rem);">
 				<b-nav vertical>
 					<b-nav-item active>Advanced</b-nav-item>
 					<b-nav-item>Clients</b-nav-item>

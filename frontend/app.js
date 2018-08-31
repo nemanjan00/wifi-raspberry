@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootswatch/dist/cyborg/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 import Vue from 'vue';
