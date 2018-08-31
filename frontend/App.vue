@@ -40,5 +40,16 @@
 
 			</b-collapse>
 		</b-navbar>
+
+		<div class="row">
+			<div class="col-2" style="border-right: 1px solid rgba(0,0,0,.1);height: calc(100vh - 4rem);">
+				<b-nav vertical>
+					<b-nav-item active>Advanced</b-nav-item>
+					<b-nav-item>Clients</b-nav-item>
+					<b-nav-item>Configuration</b-nav-item>
+					<b-nav-item>Dashboard</b-nav-item>
+				</b-nav>
+			</div>
+		</div>
 	</div>
 </template>
