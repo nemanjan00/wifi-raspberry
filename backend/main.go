@@ -11,7 +11,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	fs := http.FileServer(http.Dir("static"))
+	fs := http.FileServer(http.Dir("./frontend/static"))
 	http.Handle("/", fs)
 
 	http.HandleFunc("/api", handler);
@@ -20,5 +20,4 @@ func main() {
 
 	log.Fatal(http.ListenAndServe(":8080", nil));
 }
-
 
