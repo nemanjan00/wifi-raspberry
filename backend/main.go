@@ -14,7 +14,7 @@ func main() {
 	fs := http.FileServer(http.Dir("./frontend/static"))
 	http.Handle("/", fs)
 
-	http.HandleFunc("/api", handler);
+	http.HandleFunc("/api/", handler);
 
 	fmt.Printf("Starting wifi-raspberry on port 8080.\n");
 
