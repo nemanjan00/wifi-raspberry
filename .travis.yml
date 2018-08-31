@@ -9,12 +9,12 @@ matrix:
     script:
     - make build/static/main.js
     - make build/wifi-raspberry
-    - zip build-amd64.zip -r ./build/*
+    - zip build-amd64.zip -r ./build/
     deploy:
       provider: releases
       api_key:
         secure: gLvicN48iUwWUe0qNwKdKV7ONGWejlt16dtHUzdQQDeJaiP5yhmv0EKzWEiiVGH2qWW9ybSm3mZl6crOn42rXTuINMxqi0McXVWsPCiWnfAeGOMVhUcTc8BundkSLKYNTgWsFUrI6uyYijln3eKhLrU53uBaYUCMa3Xz4S3spW9vcN8vJk1YqT8WRaO+w7Ja41Lc/x+9DaqvkGkk6L8ext9Ph1HcVJjX99Ql8ofM+PJT4WASpKpel5obqLpEPGjzG6i/+Q25hBAW02F1/62A8Ws4HJkYNlaIYInCyGltal2KySvKAQJXODz5hry0Kb2G/aEfLmUoHZGUg9aIF7VBQKLhgsVmUAbshEEqoAfENxceadPSpJg+4J5X0eoCZ3j9tRnd5KLP8P77REBK7SFWgCi1k2JEPIwgTuTF71kNL2950Rz67mzSYNs2Uf82XAflOjKBSLnXZy7RiTUKGRmVq4Py9Pu09mJWT2qZLOGTqMU1U4LUxikKBCI9rQMOQUKvWoFm8bo2SIjugq5fRB7xck48rs6gzCOGNz4FdNawxpZB/FSV/lluTHQhKoODBTrbf517MLsM53u/NCWmZaz4CTTTzPw9V/Nmlpj4+SP14S5eUrF2un5FyelTwAkfhV69HF/G4WJEykOrPytBpfzJTrYs0kM0/2c3YuZ5tVpFNt0=
-      file: build.zip
+      file: build-amd64.zip
       skip_cleanup: true
       on:
         tags: true
