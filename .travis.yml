@@ -2,15 +2,11 @@ matrix:
   include:
     - language: go
       go: "1.10.3"
-      script:
-        - make -B build/wifi-raspberry
+      before_script:
         - nvm install 10.9.0
         - yarn --version
-
-    - language: node_js
-      node_js: "10.9.0"
-      before_script:
         - yarn global add webpack-cli webpack
       script:
+        - make build/wifi-raspberry
         - make build/static/main.js
 
