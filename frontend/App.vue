@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<b-navbar toggleable="md" type="dark" variant="primary">
+		<b-navbar toggleable="md" type="dark" variant="dark">
 
 			<b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
@@ -48,6 +48,16 @@
 					<b-nav-item>Clients</b-nav-item>
 					<b-nav-item>Configuration</b-nav-item>
 					<b-nav-item>Dashboard</b-nav-item>
+					<b-nav-item>Filters</b-nav-item>
+					<b-nav-item>Help</b-nav-item>
+					<b-nav-item>Logging</b-nav-item>
+					<b-nav-item>Modules</b-nav-item>
+					<b-nav-item>Networking</b-nav-item>
+					<b-nav-item>Notes</b-nav-item>
+					<b-nav-item>PineAP</b-nav-item>
+					<b-nav-item>Recon</b-nav-item>
+					<b-nav-item>Reporting</b-nav-item>
+					<b-nav-item>Tracking</b-nav-item>
 				</b-nav>
 			</div>
 		</div>
