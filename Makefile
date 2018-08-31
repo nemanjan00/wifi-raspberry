@@ -1,10 +1,10 @@
-backend: 
+backend:
 	go build -o ./build/wifi-raspberry ./backend/main.go
 
 watch-backend: 
 	nodemon --config ./backend.nodemon.json
 
-frontend: 
+frontend:
 	webpack-cli --config ./frontend/webpack.config.js
 
 watch-frontend:
