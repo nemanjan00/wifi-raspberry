@@ -8,7 +8,7 @@ matrix:
     - language: node_js
       node_js: "10.9.0"
       before_script:
-        - echo "before_script"
+        - yarn
       script:
         - echo "script"
 
