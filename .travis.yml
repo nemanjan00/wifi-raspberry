@@ -7,9 +7,9 @@ matrix:
     - yarn
     - yarn global add webpack-cli webpack
     script:
-    - make build/wifi-raspberry
     - make build/static/main.js
-    - zip build.zip -r ./build
+    - make build/wifi-raspberry
+    - zip build-amd64.zip -r ./build/*
     deploy:
       provider: releases
       api_key:
