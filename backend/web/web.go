@@ -8,6 +8,7 @@ import (
 	"strconv"
 	"bytes"
 
+	"os"
 	"net/http"
 );
 
@@ -31,7 +32,12 @@ func Start(){
 }
 
 func ConfigureServer(){
-	fs := http.FileServer(http.Dir("./build/static"))
-	http.Handle("/", fs);
+	if _, err := os.Stat("./build/static"); os.IsNotExist(err) {
+		fs := http.FileServer(http.Dir("./static"))
+		http.Handle("/", fs);
+	} else {
+		fs := http.FileServer(http.Dir("./build/static"))
+		http.Handle("/", fs);
+	}
 }
 
