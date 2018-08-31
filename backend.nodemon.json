@@ -1,0 +1,8 @@
+{
+	"signal": "SIGHUP",
+	"ext": "go",
+	"exec": "go run ./backend/main.go",
+	"watch": [
+		"./backend/"
+	]
+}
