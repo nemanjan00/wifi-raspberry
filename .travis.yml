@@ -10,5 +10,5 @@ matrix:
       before_script:
         - yarn global add webpack-cli webpack
       script:
-        - make frontend/static/main.js
+        - make build/static/main.js
 

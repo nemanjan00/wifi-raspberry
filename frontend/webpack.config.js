@@ -12,7 +12,7 @@ function root(args) {
 
 module.exports = {
 	output: {
-		path: root('frontend/static'),
+		path: root('build/static'),
 		publicPath: '/',
 		filename: '[name].js'
 	},

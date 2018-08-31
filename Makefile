@@ -1,12 +1,12 @@
-all: build/wifi-raspberry frontend/static/main.js
+all: build/wifi-raspberry build/static/main.js
 
 build/wifi-raspberry:
 	go build -o ./build/wifi-raspberry ./backend/main.go
 
 watch-backend: 
-	nodemon --config ./backend.nodemon.json
+	nodemon --config ./devfiles/backend.nodemon.json
 
-frontend/static/main.js:
+build/static/main.js:
 	webpack-cli --config ./frontend/webpack.config.js
 
 watch-frontend:

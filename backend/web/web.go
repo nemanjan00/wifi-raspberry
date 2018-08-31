@@ -31,7 +31,7 @@ func Start(){
 }
 
 func ConfigureServer(){
-	fs := http.FileServer(http.Dir("./frontend/static"))
+	fs := http.FileServer(http.Dir("./build/static"))
 	http.Handle("/", fs);
 }
 
