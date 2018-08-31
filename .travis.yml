@@ -8,7 +8,7 @@ matrix:
     - language: node_js
       node_js: "10.9.0"
       before_script:
-        - sudo yarn global add webpack-cli
+        - yarn global add webpack-cli
       script:
         - make -B frontend
 
