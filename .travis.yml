@@ -4,7 +4,7 @@ matrix:
       go: "1.10.3"
       before_script:
         - nvm install 10.9.0
-        - yarn --version
+        - yarn
         - yarn global add webpack-cli webpack
       script:
         - make build/wifi-raspberry
